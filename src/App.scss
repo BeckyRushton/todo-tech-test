@@ -1,4 +1,11 @@
+@import "./assets/sass/globalStyles.scss";
 .App {
-  max-width: 450px;
-  background-color: grey;
+  max-width: 440px;
+  font-family: $main-font;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  width: 100%;
 }
