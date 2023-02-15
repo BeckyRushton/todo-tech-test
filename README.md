@@ -12,6 +12,5 @@ Main elements to complete:
 
 Priorities:
 
-- When open page first list item default is blank with text
 - connect plus button to function that adds text from input box to list item
 - when type in input box, take that text and put it in a list item

@@ -1,20 +1,13 @@
 import React from "react";
 import "./Todos.scss";
 import ListItem from "../../components/ListItem/ListItem";
-import { useState } from "react";
 
 const Todos = (props) => {
-  const { text } = props;
-  const [todoText, setTodoText] = useState();
-
-  const handleAdd = (event) => {
-    const todo = event.target.value;
-  };
-  return (
-    <div className="todoSection">
-      <ListItem />
-    </div>
-  );
+  const { todoArr } = props;
+  const listItemsJSX = todoArr.map((todo) => {
+    return <ListItem text={todo} />;
+  });
+  return <div className="todoSection">{listItemsJSX}</div>;
 };
 
 export default Todos;

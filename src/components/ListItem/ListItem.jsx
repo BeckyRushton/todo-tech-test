@@ -1,9 +1,13 @@
 import "./ListItem.scss";
+import binIcon from "../../assets/images/bin-icon.png";
 
-const ListItem = () => {
+const ListItem = (props) => {
+  const { text } = props;
   return (
     <div className="todoItem">
-      Nothing to see here yet... add a task in the field above 👆
+      <input type="checkbox" />
+      <p>{text}</p>
+      <img src={binIcon} alt="bin" />
     </div>
   );
 };

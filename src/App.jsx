@@ -4,9 +4,12 @@ import Main from "./containers/Main/Main";
 import Title from "./containers/Title/Title";
 
 function App() {
+  const handleReset = (event) => {
+    event.preventDefault();
+  };
   return (
     <div className="App">
-      <Title />
+      <Title handleReset={handleReset} />
       <Main />
     </div>
   );
