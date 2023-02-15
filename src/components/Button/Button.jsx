@@ -1,8 +1,10 @@
 import React from "react";
 import "./Button.scss";
 
-const Button = () => {
-  return <div className="buttonStyle">Reset</div>;
+const Button = (props) => {
+  const { buttonText } = props;
+
+  return <div className="buttonStyle">{buttonText}</div>;
 };
 
 export default Button;

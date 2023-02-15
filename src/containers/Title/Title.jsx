@@ -6,7 +6,7 @@ const Title = () => {
   return (
     <div className="title">
       <h2 className="appName">My Todos</h2>
-      <Button />
+      <Button buttonText={"Reset"} />
     </div>
   );
 };

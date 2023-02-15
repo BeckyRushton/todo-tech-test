@@ -10,12 +10,8 @@ Main elements to complete:
 - Reset button that clears the list
 - A message that shows when your todo list is empty
 
-Containers:
+Priorities:
 
-- title with name of app
-- main section that holds the input box and the list of to dos
-
-Components:
-
-- to do list items
-- input box
+- When open page first list item default is blank with text
+- connect plus button to function that adds text from input box to list item
+- when type in input box, take that text and put it in a list item
