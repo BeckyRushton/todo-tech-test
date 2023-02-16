@@ -3,9 +3,7 @@ import "./Main.scss";
 import InputBox from "../../components/InputBox/InputBox";
 import Todos from "../Todos/Todos";
 
-
-const Main = () => {
-
+const Main = ({ handleInput, todoArr }) => {
   return (
     <div className="mainSection">
       <InputBox handleInput={handleInput} />

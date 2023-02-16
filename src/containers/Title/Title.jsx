@@ -7,7 +7,7 @@ const Title = (props) => {
   return (
     <div className="title">
       <h2 className="appName">My Todos</h2>
-      <Button buttonText={"Reset"} onClick={handleReset} />
+      <Button buttonText={"Reset"} handleReset={handleReset} />
     </div>
   );
 };

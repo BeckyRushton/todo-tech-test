@@ -2,12 +2,14 @@ import "./App.scss";
 import React from "react";
 import Main from "./containers/Main/Main";
 import Title from "./containers/Title/Title";
+import { useState } from "react";
 
 function App() {
   const [todoArr, setTodoArr] = useState([]);
+
   const handleReset = (event) => {
     event.preventDefault();
-    setTodoArr([])
+    setTodoArr([]);
   };
 
   const handleInput = (event) => {
@@ -22,7 +24,7 @@ function App() {
   return (
     <div className="App">
       <Title handleReset={handleReset} />
-      <Main todoArr={todoArr} handleInput={handleInput}/>
+      <Main todoArr={todoArr} handleInput={handleInput} />
     </div>
   );
 }
